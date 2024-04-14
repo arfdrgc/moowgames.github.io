@@ -1,10 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="robots" content="noindex, nofollow"> <!-- Add this line to prevent indexing and crawling -->
+    <meta charset="utf-8">
+    <title>Moow Games Studio</title>
     <meta name="description" content="Moow Games Studio" />
     <meta property="og:site_name" content="Moow Games Studio" />
     <meta property="og:url" content="https://www.moowgames.com/index.html" />
@@ -12,368 +10,501 @@
     <meta name="author" content="Moow Games Studio" />
     <meta property="og:type" content="website" />
     <meta name="keyword" content="Moow Game, Game Studio" />
-    <title>MOOW GAMES Studio</title>
-    <link rel="icon" href="favicon.ico" />
-    <link rel="stylesheet" href="css/icofont.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="css/animate.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/gredients/purple.css"> <!-- Default color version -->
-    <link rel="stylesheet" href="css/typography/poppins-quciksland.css"> <!-- Default typography version -->
-    <!--  Template gredient BG -->
-    <!-- <link href="css/gredients/black.css" rel="stylesheet"> -->
-    <!-- <link href="css/gredients/blue.css" rel="stylesheet"> -->
-    <!-- <link href="css/gredients/granduer.css" rel="stylesheet"> -->
-    <!-- <link href="css/gredients/purple.css" rel="stylesheet"> -->
-    <!-- <link href="css/gredients/red.css" rel="stylesheet"> -->
-    <!-- <link href="css/gredients/yellow.css" rel="stylesheet"> -->
-    <!--  Template SVG BG -->
-    <!-- <link href="css/svg/circle.css" rel="stylesheet"> -->
-    <!-- <link href="css/svg/circle-2.css" rel="stylesheet"> -->
-    <!-- <link href="css/svg/hexagon.css" rel="stylesheet"> -->
-    <!-- <link href="css/svg/hexagon-2.css" rel="stylesheet"> -->
-    <!-- <link href="css/svg/stripe.css" rel="stylesheet"> -->
-    <!-- <link href="css/svg/stripe-2.css" rel="stylesheet"> -->
-    <!--  Template Flat BG -->
-    <!-- <link href="css/colors/sky.css" rel="stylesheet"> -->
-    <!-- <link href="css/colors/brown.css" rel="stylesheet"> -->
-    <!-- <link href="css/colors/green.css" rel="stylesheet"> -->
-    <!-- <link href="css/colors/orange.css" rel="stylesheet"> -->
-    <!-- <link href="css/colors/pink.css" rel="stylesheet"> -->
-    <!-- <link href="css/colors/olive.css" rel="stylesheet"> -->
-    <!--  Template Typography -->
-    <!-- <link href="css/typography/josefin-ptserif.css" rel="stylesheet"> -->
-    <!-- <link href="css/typography/montsarat-opensans.css" rel="stylesheet"> -->
-    <!-- <link href="css/typography/poppins-quciksland.css" rel="stylesheet"> -->
-    <!-- <link href="css/typography/ubuntu-sourcesanse.css" rel="stylesheet"> -->
-    <!-- <link href="css/typography/varela-roboto.css" rel="stylesheet"> -->
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Responsive -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 10]><link href="css/ie.css" rel="stylesheet"><![endif]-->
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
-<style>
-    .hidden {
-        display: none;
-    }
 
-    .form-container {
-        text-align: center;
-    }
-</style>
-<style>
-    #preface {
-        padding-top: 120px;
-        padding-bottom: 48px;
-    }
+<!--Use dark-layout class for dark background Theme-->
+<body class="dark-layout">
+    <div class="page-wrapper">
 
-    /* Replace ".previous-section" with the actual ID or class of the previous section */
-    .previous-section {
-        padding-bottom: 48px;
-    }
-</style>
-<body data-spy="scroll" data-target="#navbarCodeply" data-offset="70">
-    <!-- ========== Preloader Start ========== -->
-    <div class="loader-wrapper">
-        <div class="loader"></div>
-    </div>
-    <!-- ========== Preloader End ========== -->
-    <!-- ========== Header Nav Start ========== -->
-    <header id="home">
-        <nav class="navbar navbar-inverse navbar-expand-lg header-nav fixed-top light-header">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/logo.png" alt=""> <!-- Add your logo here -->
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCodeply">
-                    <i class="icofont-navigation-menu"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCodeply">
-                    <ul class="nav navbar-nav ml-auto">
-                        <li><a class="nav-link" href="#home">Home</a> </li>
-                        <li><a class="nav-link" href="#Philosophy">Philosophy</a></li>
-                        <li><a class="nav-link" href="#TWIOTM">Vision</a></li>
-                        <li><a class="nav-link" href="#MTeam">Team</a></li>
-                        <li><a class="nav-link" href="#contact">Contact</a></li>
+        <!-- Preloader -->
+        <div class="preloader"></div>
+
+        <!-- Main Header / Header Style One-->
+        <header class="main-header header-style-one">
+
+            <!-- Header Container -->
+            <div class="header-container">
+
+
+                <div class="auto-container clearfix">
+
+                    <!-- Logo -->
+                    <div class="logo">
+                        <a href="#home"><img src="images/moowgames_logo.png" alt="Moow Games Studio"></a>
+                    </div>
+
+                    <!-- Main Menu -->
+                    <nav class="main-menu">
+
+                        <div class="navbar-header">
+                            <!-- Toggle Button -->
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation">
+                                <li><a href="#games">Games</a></li>
+                                <li><a href="#philosophy">Philosophy</a></li>
+                                <li><a href="#vision">Vision</a></li>
+                                <li><a href="#team">Team</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav><!-- Main Menu End-->
+
+                </div>
+            </div><!-- Header Container End-->
+
+        </header><!--End Main Header -->
+        <!--Main Slider-->
+        <section id="home" class="main-slider style-one">
+
+            <!--Slider COntainer-->
+            <div class="slider-container">
+                <ul class="slider-style-one">
+
+                    <!--Slide Item Start-->
+                    <li class="slide-item" style="background-image: url(images/main-slider/moow_bg_image_1.jpg);" data-bg-position="center top">
+                        <div class="auto-container">
+                            <div class="content-container">
+                                <div class="content-box">
+                                    <div class="content color-white">
+                                        <div class="text-center">
+                                            <div class="image-box wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0ms"><img src="images/main-slider/moow_slide_logo.png" alt=""></div>
+                                            <h3 class="spaced-text-big wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="500ms">In The MOOWment</h3>
+                                            <h4 class="bigger-title wow zoomInStable" data-wow-duration="1500ms" data-wow-delay="1000ms">MOOW GAMES STUDIO</h4>
+                                            <div class="text light-text wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="1500ms">Stories get to your soul, experiences keep you MOOWed, and games play your next moves!</div>
+                                        </div>
+
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--Slide Item End-->
+
+
+                </ul>
+            </div>
+
+            <div class="other-page-link">
+                <a class="theme-btn" href="#">CONTACT US</a>
+            </div>
+
+        </section>
+
+
+        <!--Our Skills Section-->
+        <section id="games" class="our-skills-section">
+            <div class="auto-container">
+
+                <div class="title-box text-center">
+                    <h2>OUR GAMES</h2>
+                </div>
+
+                <div class="posts-container">
+
+                    <!--Style Left-->
+                    <article class="default-post-style style-one left-aligned">
+                        <div class="row clearfix">
+                            <div class="col-md-6 col-sm-12 col-xs-12 image-column">
+                                <div class="clearfix">
+                                    <figure class="image-outer">
+                                        <div class="image-box wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="0ms">
+                                            <img src="images/games/weapon_car_run_1.jpg" alt="weapon car run games">
+                                        </div>
+                                        <div class="post-info"><a href="#" class="theme-btn">WEAPON CAR RUN 2024</a></div>
+                                    </figure>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12 content-column">
+                                <div class="default-content-box">
+                                    <div class="default-post-title">
+                                        <h4>2024</h4>
+                                        <h3><span class="post-number">1q </span> WEAPON CAR RUN</h3>
+                                    </div>
+                                    <div class="content-box">
+                                        <div class="text">
+                                            <p>Best drive shooting challenge!! Shoot, collect, upgrade. Gather points and modify your dream car!</p>
+                                            <p>in markets very soon...</p>
+                                        </div>
+                                        <div class="link-box"><a href="https://youtu.be/n0yK87Jykks" target="_blank" class="theme-btn btn-style-one">Watch</a></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Style Right-->
+                    <article class="default-post-style style-one right-aligned">
+                        <div class="row clearfix">
+                            <div class="col-md-6 col-sm-12 col-xs-12 image-column pull-right">
+                                <div class="clearfix">
+                                    <figure class="image-outer pull-right">
+                                        <div class="image-box wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="0ms">
+                                            <img src="images/games/ticket_challenge_1.jpg" alt="Ticket Challenge Games">
+                                        </div>
+                                        <div class="post-info"><a href="#" class="theme-btn">TICKET CHALLENGE 2024</a></div>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12 content-column pull-left">
+                                <div class="default-content-box text-right">
+                                    <div class="default-post-title">
+                                        <h4>2024</h4>
+                                        <h3><span class="post-number">2q </span> TICKET CHALLENGE</h3>
+                                    </div>
+                                    <div class="content-box">
+                                        <div class="text">
+                                            <p>Collect all the tickets to tour the world. Discover the most eye-catching landmarks of the cities you visit. Take selfies and collect badges.</p>
+                                        </div>
+                                        <div class="link-box"><a href="#" class="theme-btn btn-style-one">WORK IN PROGRESS</a></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!--Style Left-->
+                    <article class="default-post-style style-one left-aligned">
+                        <div class="row clearfix">
+                            <div class="col-md-6 col-sm-12 col-xs-12 image-column">
+                                <div class="clearfix">
+                                    <figure class="image-outer">
+                                        <div class="image-box wow fadeInRight" data-wow-duration="1000ms" data-wow-delay="0ms">
+                                            <img src="images/games/word_game_1.jpg" alt="Word Game">
+                                        </div>
+                                        <div class="post-info"><a href="#" class="theme-btn">WORD GAME 2024</a></div>
+                                    </figure>
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 col-xs-12 content-column">
+                                <div class="default-content-box">
+                                    <div class="default-post-title">
+                                        <h4>2024</h4>
+                                        <h3><span class="post-number">3q </span> WORD GAME</h3>
+                                    </div>
+                                    <div class="content-box">
+                                        <div class="text">
+                                            <p>Test your vocabulary. Find the hidden words and try to rise on the leaderboard.</p>
+                                        </div>
+                                        <div class="link-box"><a href="#" class="theme-btn btn-style-one">WORK IN PROGRESS</a></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="philosophy" class="page-title" style="background-image: url(images/background/moow_section_bg_1.jpg); ">
+            <div class="auto-container text-center">
+                <div class="title-box text-center">
+                    <h3 class="small-text theme_color">Philosophy</h3>
+                    <h2>MOOW the Game!</h2>
+                    <div class="text">We believe in the power of stories to transform gameplay. By skillfully blending rich narratives and player-driven experiences with cutting-edge game engineering, we invite players to dive into a world where stories take the lead and players become active participants in their unfolding. Players would find themselves deeply immersed in the game's universe even in casual and hyper-casual mobile games. Our main philosophy is to move the game to the next level.</div>
+                </div>
+            </div>
+        </section>
+
+        <!--Features Section-->
+        <section id="vision" class="features-section">
+            <div class="auto-container">
+                <div class="title-box text-center">
+                    <h3 class="small-text">VISION</h3>
+                    <h2>THE WORLD IS ON THE MOOW!</h2>
+                </div>
+
+                <div class="text-portion">
+                    <div class="features-container">
+                        <div class="clearfix">
+                            <!--Icon Column-->
+                            <div class="column default-icon-column col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                <div class="inner-box">
+                                    <div class="icon-box"><span class="icon flaticon-monitor"></span></div>
+                                    <h3>Storytelling Reimagined</h3>
+                                    <div class="text">We are committed to reconstruct storytelling in casual and hyper-casual games</div>
+                                </div>
+                            </div>
+                            <!--Icon Column-->
+                            <div class="column default-icon-column col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                <div class="inner-box">
+                                    <div class="icon-box"><span class="icon flaticon-computer"></span></div>
+                                    <h3>Multi-Platform Games</h3>
+                                    <div class="text">MOOW Games player will be immersed in our world using every platform the wish.</div>
+                                </div>
+                            </div>
+                            <!--Icon Column-->
+                            <div class="column default-icon-column col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                <div class="inner-box">
+                                    <div class="icon-box"><span class="icon flaticon-summer"></span></div>
+                                    <h3>Innovation Unleashed</h3>
+                                    <div class="text">MOOW is cruising in the direction of exploring new possibilities through innovation.</div>
+                                </div>
+                            </div>
+                            <!--Icon Column-->
+                            <div class="column default-icon-column col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                <div class="inner-box">
+                                    <div class="icon-box"><span class="icon flaticon-shape-2"></span></div>
+                                    <h3>Building Connections</h3>
+                                    <div class="text">Our games will be a platform for players to socialize, get connected, and compete.</div>
+                                </div>
+                            </div>
+                            <!--Icon Column-->
+                            <div class="column default-icon-column col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                <div class="inner-box">
+                                    <div class="icon-box"><span class="icon flaticon-technology-7"></span></div>
+                                    <h3>Multimedia Presence</h3>
+                                    <div class="text">We are developing rich stories than can extend into other realms of multimedia.</div>
+                                </div>
+                            </div>
+                            <!--Icon Column-->
+                            <div class="column default-icon-column col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                                <div class="inner-box">
+                                    <div class="icon-box"><span class="icon flaticon-food"></span></div>
+                                    <h3>Adaptive Worlds</h3>
+                                    <div class="text">We will develop adaptive worlds where players can leave their trails and immerse.</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Team Section-->
+        <section id="team" class="team-section no-padd-bottom">
+            <div class="auto-container">
+                <div class="title-box light text-center margin-bott-20">
+                    <h2>MEET OUR TEAM</h2>
+                </div>
+                <div class="row clearfix">
+
+                    <!--Team Column-->
+                    <div class="default-team-column col-md-3 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <figure class="image-box"><img src="images/team/fatih_aydin.png" alt=""></figure>
+                        </div>
+                    </div>
+
+                    <!--Team Column-->
+                    <div class="default-team-column col-md-3 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <figure class="image-box"><img src="images/team/arif_durgec.png" alt=""></figure>
+                        </div>
+                    </div>
+
+                    <!--Team Column-->
+                    <div class="default-team-column col-md-3 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <figure class="image-box"><img src="images/team/mahdi_sabamehr.png" alt=""></figure>
+                        </div>
+                    </div>
+
+                    <!--Team Column-->
+                    <div class="default-team-column col-md-3 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <figure class="image-box"><img src="images/team/hakan_silek.png" alt=""></figure>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+
+        <!--Default Blog Section-->
+        <section id="news" class="default-blog-section">
+            <div class="auto-container">
+                <div class="title-box text-center">
+                    <h2>LATEST NEWS</h2>
+                </div>
+
+                <!--Default Blog Post / Style One-->
+                <article class="default-post-style blog-post style-one left-aligned">
+                    <div class="row clearfix">
+                        <div class="col-md-7 col-sm-12 col-xs-12 image-column">
+                            <div class="clearfix">
+                                <figure class="blog-image wow fadeInLeft" data-wow-duration="1500ms" data-wow-delay="0ms"><img src="images/news/hgc_2024_1.jpg" alt="HIT Game Conferece Istanbul 2024"></figure>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-12 col-xs-12 content-column padd-top-50">
+                            <div class="default-content-box wow fadeInRight" data-wow-duration="1500ms" data-wow-delay="0ms">
+                                <div class="default-post-title">
+                                    <h3><a href="#">HIT GAMES CONFERENCE</a></h3>
+                                </div>
+                                <div class="content-box">
+                                    <div class="default-post-info"><a href="#">CONFERENCE</a>, 17/04/2024</div>
+                                    <div class="text">
+                                        <p>Moow Games Studio took its place at the HIT Game Conference, which will be held in Istanbul between 17-18 April 2024.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!--Team Section-->
+        <section id="contact" class="team-section no-padd-bottom">
+            <div class="auto-container">
+                <div class="title-box light text-center margin-bott-20">
+                    <h3 class="small-text">KEEP IN TOUCH</h3>
+                    <h2>CONTACT US</h2>
+                    <div class="text"><a href="webmaster@moowgames.com">webmaster@moowgames.com</a></div>
+                </div>
+                <div class="row clearfix">
+
+                    <div class="default-team-column col-md-6 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <figure class="image-box"><img src="images/team/empty_badge_0.png" alt=""></figure>
+                            <div class="content-box">
+                                <h4 class="spaced-text">OFFICE</h4>
+                                <h3>İSTANBUL, TÜRKİYE</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="default-team-column col-md-6 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <figure class="image-box"><img src="images/team/empty_badge_0.png" alt=""></figure>
+                            <div class="content-box">
+                                <h4 class="spaced-text">OFFICE </h4>
+                                <h3>TORONTO, CANADA</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="our-work-section">
+            <div class="auto-container">
+                <div class="portfolio-carousel-outer">
+                    <ul class="portfolio-carousel">
+
+                        <li class="slide-item">
+                            <!--Default Portfolio Item-->
+                            <article class="default-portfolio-item">
+                                <div class="item-inner">
+                                    <figure class="image-box">
+                                        <img src="images/main-slider/wcr_1.jpg" alt="">
+                                    </figure>
+                                    <div class="item-cat"></div>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li class="slide-item">
+                            <!--Default Portfolio Item-->
+                            <article class="default-portfolio-item">
+                                <div class="item-inner">
+                                    <figure class="image-box">
+                                        <img src="images/main-slider/wcr_2.jpg" alt="">
+                                    </figure>
+                                    <div class="item-cat"></div>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li class="slide-item">
+                            <!--Default Portfolio Item-->
+                            <article class="default-portfolio-item">
+                                <div class="item-inner">
+                                    <figure class="image-box">
+                                        <img src="images/main-slider/wcr_3.jpg" alt="">
+                                    </figure>
+                                    <div class="item-cat"></div>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li class="slide-item">
+                            <!--Default Portfolio Item-->
+                            <article class="default-portfolio-item">
+                                <div class="item-inner">
+                                    <figure class="image-box">
+                                        <img src="images/main-slider/wcr_4.jpg" alt="">
+                                    </figure>
+                                    <div class="item-cat"></div>
+                                </div>
+                            </article>
+                        </li>
+
                     </ul>
-                    <!-- End navigation -->
                 </div>
             </div>
-        </nav>
-    </header>
-    <!-- ========== Header Nav End ========== -->
-    <!-- ========== Hero Start ========== -->
-    <section class="hero-area circle-wrap">
-        <div class="circle x1"></div>
-        <div class="circle x2"></div>
-        <div class="circle x3"></div>
-        <div class="circle x4"></div>
-        <div class="circle x5"></div>
-        <div class="circle x6"></div>
-        <div class="circle x7"></div>
-        <div class="circle x8"></div>
-        <div class="circle x9"></div>
-        <div class="circle x10"></div>
-        <!-- End circle -->
-        <div class="container">
-            <div class="row full-height align-items-center">
-                <div class="col-md-6 p-100px-t p-50px-b md-p-10px-b">
-                    <h2 id="main-title" class="text-capitalize m-56px-b">In the <br>MOOWment.</h2>
+        </section>
 
-                    <style>
-                        #main-title {
-                            font-size: 56px;
-                        }
-                    </style>
-                    <p class="m-25px-b">
-                        Stories get to your soul, experiences  keep you MOOWed, and games play your next moves!
-                    </p>
-                    <div class="hero-btn-wrapper hidden">
-                        <a href="#" class="btn btn-default animated-btn">Download App</a>
-                        <a class="btn btn-default btn-default-outline animated-btn" href="#">More Details</a>
-                    </div>
-                </div>
-                <div class="col-md-6 p-100px-t p-50px-b md-p-10px-t">
-                    <img class="hero-mock" src="img/hero-mock.png" alt="Hero mockup" />
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ========== Hero End ========== -->
-    <!-- ==========  Philosophy Start ========== -->
-    <section id="Philosophy" class="p-80px-b">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 offset-sm-2">
-                    <div class="section-title text-center m-50px-b">
-                        <!-- <h2>MOOW the Game!</h2> -->
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <div class="position-relative md-m-50px-b">
-                        <div class="bordered-circle"></div>
-                        <style>
-                            .bordered-circle {
-                                background-color: #642c91;
-                            }
-                        </style>
-                        <img class="moveUpDown" src="img/preface_1.png" alt="">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <h2 id="moowthegame" class="m-15px-b">MOOW the Game!</h2>
-                    <style>
-                        #moowthegame {
-                            font-size: 56px;
-                        }
-                    </style>
-                    <p class="m-25px-b">We believe in the power of stories to transform gameplay. By skillfully blending rich narratives and player-driven experiences with cutting-edge game engineering, we invite players to dive into a world where stories take the lead and players become active participants in their unfolding. Players would find themselves deeply immersed in the game's universe even in casual and hyper-casual mobile games.<br>Our main philosophy is to move the game to the next level. </p>
-                    <div class="apps-buttons">
-                        <a href="#" class="btn btn-default btn-filled  animated-btn hidden"><i class="icofont-brand-android-robot"></i> Available on<br>Google store</a>
-                        <a href="#" class="btn btn-default  btn-filled animated-btn hidden"><i class="icofont-brand-apple"></i> Available on<br>Apple store</a>
 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ========== Philosophy End ========== -->
-    <!-- ==========  TWIOTM Start ========== -->
-    <section id="TWIOTM" class="p-80px-tb position-relative">
-        <div class="filled-circle">
-            <div class="filled-circle"></div>
-            <div class="filled-circle"></div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 offset-sm-2">
-                    <div class="section-title text-center m-50px-b">
-                        <h2>The World is on the MOOW!</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row align-items-center">
-                <div class="col-lg-6 col-md-12  md-p-50px-b">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="single-feature">
-                                <i class="icofont-drawing-tablet"></i>
-                                <h4>Storytelling Reimagined</h4>
-                                <p>We are committed to reconstruct storytelling in casual and hyper-casual games.</p>
-                            </div>
-                        </div>
-                        <!-- End single TWIOTM -->
-                        <div class="col-sm-6">
-                            <div class="single-feature">
-                                <i class="icofont-responsive"></i>
-                                <h4>Multi-Platform Games</h4>
-                                <p>MOOW Games player will be immersed in our world using every platform the wish.</p>
-                            </div>
-                        </div>
-                        <!-- End single TWIOTM -->
-                        <div class="col-sm-6">
-                            <div class="single-feature">
-                                <i class="icofont-ui-note"></i>
-                                <h4>Building Connections</h4>
-                                <p>Our games will be a platform for players to socialize, get connected, and compete.</p>
-                            </div>
-                        </div>
-                        <!-- End single TWIOTM -->
-                        <div class="col-sm-6">
-                            <div class="single-feature">
-                                <i class="icofont-file-avi-mp4"></i>
-                                <h4>Multimedia Presence</h4>
-                                <p>We are developing rich stories than can extend into other realms of multimedia. </p>
-                            </div>
-                        </div>
-                        <!-- End single TWIOTM -->
-                        <div class="col-sm-6">
-                            <div class="single-feature">
-                                <i class="icofont-code-alt"></i>
-                                <h4>Adaptive Worlds</h4>
-                                <p>We will develop adaptive worlds where players can leave their trails and immerse.</p>
-                            </div>
-                        </div>
-                        <!-- End single TWIOTM -->
-                        <div class="col-sm-6">
-                            <div class="single-feature">
-                                <i class="icofont-cloud-refresh"></i>
-                                <h4>Innovation Unleashed</h4>
-                                <p>MOOW is cruising in the direction of exploring new possibilities through innovation.</p>
-                            </div>
-                        </div>
-                        <!-- End single TWIOTM -->
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-12">
-                    <div class="position-relative featured-mockup">
-                        <div class="bordered-box"></div>
-                        <img class="phone-1" src="img/iphone-1_1.png" alt="">
-                        <img class="phone-2" src="img/iphone-2_1.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ==========  TWIOTM End ========== -->
-    <!-- ==========  Team Start ========== -->
-    <section id="MTeam" class="p-80px-tb position-relative">
+        <!--Main Footer-->
+        <footer class="main-footer">
+            <div class="upper-part">
 
-        <!-- <div class="circle x1"></div>         <div class="circle x2"></div>         <div class="circle x3"></div>         <div class="circle x4"></div><div class="circle x7"></div> -->
-        <!-- End circles -->
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 offset-sm-2">
-                    <div class="section-title text-center m-50px-b">
-                        <h2>Meet the Team</h2>
+                <div class="auto-container">
+                    <div class="logo"><a href="#"><img src="images/moowgames_footer_logo_2.png" alt=""></a></div>
+                    <div class="text">Stories get to your soul, experiences keep you MOOWed, and games play your next moves!</div>
+                    <div class="footer-social-links clearfix">
+                        <a href="mailto:webmaster@moowgames.com" class="social-link clearfix"><span class="icon fa fa-envelope"></span><span class="txt">webmaster@moowgames.com</span></a>
+                        <a href="https://www.linkedin.com/company/moow-games-studio" class="social-link clearfix"><span class="icon fa fa-linkedin"></span><span class="txt">LinkedIn</span></a>
+                        <a href="https://www.facebook.com/people/MooW-Games-Studio/100091451305961/" class="social-link clearfix"><span class="icon fa fa-facebook-f"></span><span class="txt">Facebook</span></a>
+                        <a href="https://www.instagram.com/moow.games.studio/" class="social-link clearfix"><span class="icon fa fa-instagram"></span><span class="txt">Instagram</span></a>
                     </div>
                 </div>
             </div>
-            <div class="row swiper-container screenshot-swiper p-50px-b">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide col-sm-4">
-                        <img src="img/ss1.png" alt="">
-                    </div>
-                    <!-- End single ScreenShot -->
-                    <div class="swiper-slide col-sm-4">
-                        <img src="img/ss2.png" alt="">
-                    </div>
-                    <!-- End single ScreenShot-->
-                    <!--<div class="swiper-slide col-sm-4">
-                       <img src="img/ss3.png" alt="">
-                    </div>-->
-                    <!-- End single ScreenShot -->
-                    <div class="swiper-slide col-sm-4">
-                        <img src="img/ss4.png" alt="">
-                    </div>
-                    <!-- End single ScreenShot -->
-                    <div class="swiper-slide col-sm-4">
-                        <img src="img/ss5.png" alt="">
-                    </div>
-                    <!-- End single ScreenShot -->
-                </div>
-                <!-- Add Pagination -->
-                <div class="swiper-pagination"></div>
-                <!-- Add Arrows -->
-                <div class="swiper-button-next">
-                    <i class="icofont-stylish-right"></i>
-                </div>
-                <div class="swiper-button-prev">
-                    <i class="icofont-stylish-left"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ==========  Team End ========== -->
-    <!-- ==========  Featured 2 Start ========== -->
-    <section id="feature2" class="p-100px-tb sm-p-50px-tb featured-2 position-relative">
-        <div class="bordered-circle2"></div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <h2>Get Our Games</h2>
-                    <p>We have carefully crafted our games, so you can enjoy them on your device. You can easily download our games in related online stores.</p>
-                    <div class="apps-buttons">
-                        <a href="" class="btn btn-default btn-filled animated-btn" target="_self"><i class="icofont-brand-android-robot"></i>Coming Soon<br>Google Play Store</a>
-                        <a href="" class="btn btn-default btn-filled animated-btn" target="_self"><i class="icofont-brand-apple"></i> Coming Soon<br>Apple App Store</a>
 
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="position-relative featured-mockup2">
-                        <img class="phone-1" src="img/6mockup1_1.png" alt="">
-                    </div>
+            <!--Footer Bottom-->
+            <div class="footer-bottom">
+                <div class="auto-container">
+                    <div class="text"><span class="theme_color">MooW Games Studio</span> &copy; 2024 All Right Reserved</div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- ==========  Featured 2 End ========== -->
-    <!-- ==========  Contact Start ========== -->
-    <section id="contact" class="p-80px-tb">
-        <div class="container">
-            <div class="row">
-                <div class="p-30px-tb text-center">
-                   <a href="mailto:webmaster@moowgames.com">webmaster@moowgames.com</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ==========  Contact End ========== -->
-    <!-- ==========  Footer Start ========== -->
-    <footer id="footer" class="p-70px-t p-30px-b footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="footer-top text-center p-30px-tb">
-                        <a class="footer-logo" href=""><img src="img/logo.png" alt=""></a>
-                        <p></p>
-                        <div class="social-network">
-                            <a href="https://www.facebook.com/people/MooW-Games-Studio/100091451305961/" target="_blank"><i class="social-icon icofont-facebook"></i></a>
-                            <a href="https://www.linkedin.com/company/moow-games-studio/about/?viewAsMember=true" target="_blank"><i class="social-icon icofont-linkedin"></i></a>
-                            <a href="https://www.instagram.com/moow.games.studio/" target="_blank"><i class="social-icon icofont-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="footer-copyright p-30px-tb text-center">
-                        <p>Copyright &copy; MOOW Games Studio 2024. All Rights Reserved.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- ==========  Footer End ========== -->
-    <!-- jQuery -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/jquery-migrate-3.0.0.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Animated text -->
-    <script src="js/jquery.textillate.js"></script>
-    <script src="js/jquery.lettering.js"></script>
-    <script src="js/jquery.fittext.js"></script>
-    <!-- AjaxChimp js -->
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <!-- Swiper JS -->
-    <script src="js/swiper.min.js"></script>
-    <!-- Custom -->
-    <script src="js/custom.js"></script>
+
+        </footer>
+
+    </div>
+
+<div class="scroll-to-top"><span class="icon fa fa-long-arrow-up"></span></div>
+
+
+<script src="js/jquery.js"></script> 
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/bxslider.js"></script>
+<script src="js/owl.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/wow.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
