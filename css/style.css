@@ -2894,7 +2894,7 @@ ul,li{
 }
 
 .footer-social-links .social-link:hover{
-	background:#bb9b1d;
+	background:#ad44ff;/*bb9b1b*/
 	color:#ffffff;
 	padding:10px 30px;	
 }
@@ -4573,8 +4573,8 @@ ul,li{
 	width:auto;	
 }
 
-.default-social-links .social-link:hover{
-	background:#2693ff;
-	color:#ffffff;
-	padding:10px 30px;	
-}
+	.default-social-links .social-link:hover {
+		background: #ad44ff; /*2693ff*/
+		color: #ffffff;
+		padding: 10px 30px;
+	}
