@@ -225,33 +225,33 @@
 	.fixed-header .main-menu{
 		padding-top:0px;
 	}
-	
+
 	.main-menu .collapse {
-	   max-height:300px;
-		overflow:auto;
-		float:none;
-		width:100%;
-		padding:0px 0px 25px;
-		border:1px solid #bc9c00;
-		margin:0px;
-		-ms-border-radius:3px;
-		-moz-border-radius:3px;
-		-webkit-border-radius:3px;
-		-o-border-radius:3px;
-		border-radius:3px;
-   }
-   
-	.main-menu .collapse.in,
-	.main-menu .collapsing{
-		padding:0px;
-		border:1px solid #bc9c00;
-		margin:0px 0px 25px;
-		-ms-border-radius:3px;
-		-moz-border-radius:3px;
-		-webkit-border-radius:3px;
-		-o-border-radius:3px;
-		border-radius:3px;	
+		max-height: 300px;
+		overflow: auto;
+		float: none;
+		width: 100%;
+		padding: 0px 0px 25px;
+		border: 1px solid #ad44ff; /*#bc9c00*/
+		margin: 0px;
+		-ms-border-radius: 3px;
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		-o-border-radius: 3px;
+		border-radius: 3px;
 	}
+
+		.main-menu .collapse.in,
+		.main-menu .collapsing {
+			padding: 0px;
+			border: 1px solid #ad44ff; /*#bc9c00*/
+			margin: 0px 0px 25px;
+			-ms-border-radius: 3px;
+			-moz-border-radius: 3px;
+			-webkit-border-radius: 3px;
+			-o-border-radius: 3px;
+			border-radius: 3px;
+		}
 	
 	
 	.main-menu .navbar-header{
@@ -272,15 +272,15 @@
 	.header-style-two .main-menu .navbar-header{
 		padding:0px 0px 10px;	
 	}
-	
-	.main-menu .navbar-header .navbar-toggle{
-		display:inline-block;
-		z-index:7;
-		border:1px solid #bc9c00;
-		background:#bc9c00;
-		float:none;
-		margin:0px;
-		border-radius:0px;
+
+	.main-menu .navbar-header .navbar-toggle {
+		display: inline-block;
+		z-index: 7;
+		border: 1px solid #ad44ff; /*#bc9c00*/
+		background: #ad44ff; /*#bc9c00*/
+		float: none;
+		margin: 0px;
+		border-radius: 0px;
 	}
 	
 	.header-style-two .main-menu .navbar-header .navbar-toggle{
@@ -291,12 +291,12 @@
 	.main-menu .navbar-header .navbar-toggle .icon-bar{
 		background:#ffffff;	
 	}
-	
-	.main-menu .navbar-collapse > .navigation{
-		float:none !important;
-		margin:0px !important;
-		width:100% !important;
-		background:#bc9c00;
+
+	.main-menu .navbar-collapse > .navigation {
+		float: none !important;
+		margin: 0px !important;
+		width: 100% !important;
+		background: #ad44ff; /*#bc9c00*/
 	}
 	
 	.main-menu .navbar-collapse > .navigation > li{
@@ -321,31 +321,31 @@
 	.main-menu .navigation > li > ul > li > a:before, .main-menu .navigation > li > ul > li > ul > li > a:before{
 		display:none !important;
 	}
-	
+
 	.main-menu .navbar-collapse > .navigation > li > ul,
-	.main-menu .navbar-collapse > .navigation > li > ul > li > ul{
-		position:relative;
-		border:none;
-		float:none;
-		visibility:visible;
-		opacity:1;
-		display:none;
-		margin:0px;
-		left:auto !important;
-		right:auto !important;
-		top:auto !important;
-		width:100%;
-		background:#bc9c00;
-		-webkit-border-radius:0px;
-		-ms-border-radius:0px;
-		-o-border-radius:0px;
-		-moz-border-radius:0px;
-		border-radius:0px;
-		transition:none !important;
-		-webkit-transition:none !important;
-		-ms-transition:none !important;
-		-o-transition:none !important;
-		-moz-transition:none !important;
+	.main-menu .navbar-collapse > .navigation > li > ul > li > ul {
+		position: relative;
+		border: none;
+		float: none;
+		visibility: visible;
+		opacity: 1;
+		display: none;
+		margin: 0px;
+		left: auto !important;
+		right: auto !important;
+		top: auto !important;
+		width: 100%;
+		background: #ad44ff; /*#bc9c00*/
+		-webkit-border-radius: 0px;
+		-ms-border-radius: 0px;
+		-o-border-radius: 0px;
+		-moz-border-radius: 0px;
+		border-radius: 0px;
+		transition: none !important;
+		-webkit-transition: none !important;
+		-ms-transition: none !important;
+		-o-transition: none !important;
+		-moz-transition: none !important;
 	}
 		
 	.main-menu .navbar-collapse > .navigation > li > ul,
@@ -366,31 +366,31 @@
 	.main-menu .navbar-collapse > .navigation > li:first-child{
 		border:none;	
 	}
-	
-	.main-menu .navbar-collapse > .navigation > li > a,
-	.main-menu .navbar-collapse > .navigation > li > ul > li > a,
-	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a{
-		padding:10px 10px !important;
-		line-height:22px;
-		color:#ffffff;
-		background:#bc9c00;
-		text-align:left;
-	}
-	
-	.main-menu .navbar-collapse > .navigation > li > a:hover,
-	.main-menu .navbar-collapse > .navigation > li > a:active,
-	.main-menu .navbar-collapse > .navigation > li > a:focus{
-		background:#bc9c00;
-	}
-	
-	.main-menu .navbar-collapse > .navigation > li:hover > a,
-	.main-menu .navbar-collapse > .navigation > li > ul > li:hover > a,
-	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li:hover > a,
-	.main-menu .navbar-collapse > .navigation > li.current > a,
-	.main-menu .navbar-collapse > .navigation > li.current-menu-item > a{
-		background:#bc9c00;
-		color:#ffffff !important;
-	}
+
+		.main-menu .navbar-collapse > .navigation > li > a,
+		.main-menu .navbar-collapse > .navigation > li > ul > li > a,
+		.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a {
+			padding: 10px 10px !important;
+			line-height: 22px;
+			color: #ffffff;
+			background: #ad44ff; /*bc9c00*/
+			text-align: left;
+		}
+
+			.main-menu .navbar-collapse > .navigation > li > a:hover,
+			.main-menu .navbar-collapse > .navigation > li > a:active,
+			.main-menu .navbar-collapse > .navigation > li > a:focus {
+				background: #ad44ff; /*bc9c00*/
+			}
+
+		.main-menu .navbar-collapse > .navigation > li:hover > a,
+		.main-menu .navbar-collapse > .navigation > li > ul > li:hover > a,
+		.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li:hover > a,
+		.main-menu .navbar-collapse > .navigation > li.current > a,
+		.main-menu .navbar-collapse > .navigation > li.current-menu-item > a {
+			background: #ad44ff; /*bc9c00*/
+			color: #ffffff !important;
+		}
 	
 	.main-menu .navbar-collapse > .navigation li.dropdown .dropdown-btn{
 		display:block;
@@ -498,10 +498,10 @@
 		opacity:1 !important;
 		color:#ffffff !important;	
 	}
-	
-	.default-social-links .social-link .icon{
-		opacity:1 !important;
-		color:#bc9c00 !important;	
+
+	.default-social-links .social-link .icon {
+		opacity: 1 !important;
+		color: #ad44ff !important; /*bc9c00*/
 	}
 	
 	.default-social-links .social-link:hover{
