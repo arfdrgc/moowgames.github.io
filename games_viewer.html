@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Games Viewer</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+    th {
+      background: #eee;
+    }
+    input {
+      margin: 5px 10px 20px 0;
+      padding: 5px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Games CSV Viewer</h2>
+
+  <input type="text" id="filterStudio" placeholder="Filter by Studio Name">
+  <input type="text" id="filterPlatform" placeholder="Filter by Platform">
+  <input type="text" id="filterGame" placeholder="Filter by Game Name">
+  <input type="text" id="filterGenre" placeholder="Filter by Genre">
+  <input type="text" id="filterDate" placeholder="Filter by Detect Date (yy/mm/dd)">
+
+  <table id="gamesTable">
+    <thead>
+      <tr>
+        <th>Studio Name</th>
+        <th>Platform</th>
+        <th>Detect Date</th>
+        <th>Game Name</th>
+        <th>Genre</th>
+        <th>Last Check Time</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    async function loadCSV() {
+      const response = await fetch('games.csv');
+      const text = await response.text();
+      const rows = text.trim().split('\n').slice(1); // Skip header
+      const tbody = document.querySelector('#gamesTable tbody');
+
+      for (const row of rows) {
+        const cols = row.split(',');
+        const tr = document.createElement('tr');
+        cols.forEach(col => {
+          const td = document.createElement('td');
+          td.textContent = col.trim();
+          tr.appendChild(td);
+        });
+        tbody.appendChild(tr);
+      }
+    }
+
+    function setupFilters() {
+      const filters = {
+        studio: document.getElementById('filterStudio'),
+        platform: document.getElementById('filterPlatform'),
+        game: document.getElementById('filterGame'),
+        genre: document.getElementById('filterGenre'),
+        date: document.getElementById('filterDate')
+      };
+
+      Object.values(filters).forEach(input => {
+        input.addEventListener('input', () => {
+          const rows = document.querySelectorAll('#gamesTable tbody tr');
+          rows.forEach(row => {
+            const cells = Array.from(row.children).map(td => td.textContent.toLowerCase());
+            const [studio, platform, detectDate, game, genre] = cells;
+            const show =
+              studio.includes(filters.studio.value.toLowerCase()) &&
+              platform.includes(filters.platform.value.toLowerCase()) &&
+              game.includes(filters.game.value.toLowerCase()) &&
+              genre.includes(filters.genre.value.toLowerCase()) &&
+              detectDate.includes(filters.date.value.toLowerCase());
+            row.style.display = show ? '' : 'none';
+          });
+        });
+      });
+    }
+
+    loadCSV();
+    setupFilters();
+  </script>
+</body>
+</html>
