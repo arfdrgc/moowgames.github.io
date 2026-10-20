@@ -520,7 +520,7 @@ const GP = id => `https://play.google.com/store/apps/details?id=${id}`;
 // shots: genuine store screenshots in assets/ (w/h default to 590x1280; optional caption); cards without them show screenshot placeholders.
 const GAMES = [
   { name: "Fishing Rush Crew", year: 2026, icon: "fishing_rush_crew", genre: "matching", status: "live", gp: GP("com.moowgames.fishingrushcrewpuzzle"),
-    credit: "Developed by MooW Games Studio. Published with Azur Games.", creditShort: "Developed by MooW. Published with Azur Games.",
+    credit: "Developed by MooW Games Studio. In partnership with Azur Games.", creditShort: "Developed by MooW. In partnership with Azur Games.",
     desc: "Match colorful fish crates, release fish into winding water paths, and guide them to the fishing crew with matching colors. A satisfying puzzle game that combines clever planning with a relaxing fishing theme.",
     stats: [{ value: "50", label: "Levels" }, { value: "5", label: "Features" }, { value: "4", label: "Boosters" }],
     shots: [
@@ -529,7 +529,7 @@ const GAMES = [
       { file: "fishing_rush_crew_shot_3.webp", alt: "Fishing Rush Crew gameplay: a crowded board of colored fish crates and four fishermen matching fish by color" },
     ] },
   { name: "Knit Match: Yarn Puzzle", year: 2026, icon: "knit_match_1", genre: "yarn", status: "live", as: AS("6769276664"), gp: GP("com.unicostudio.knitmatch"),
-    credit: "Developed by MooW Games Studio. Published under Unico Studio's developer account on the App Store and Google Play.", creditShort: "Developed by MooW. Published under Unico Studio.",
+    credit: "Developed by MooW Games Studio. In partnership with Unico Studio.", creditShort: "Developed by MooW. In partnership with Unico Studio.",
     desc: "Tap spools on the grid, send them to your dock, and watch colorful yarns flow down and merge into woven art.",
     stats: [{ value: "150", label: "Levels" }, { value: "8", label: "Features" }, { value: "3", label: "Boosters" }],
     specs: ["21 languages", "Lives system", "Ad monetization", "In-app purchases", "Remote Config (35 parameters)"],
@@ -541,7 +541,7 @@ const GAMES = [
   { name: "Marble Brick Blast", year: 2026, icon: "marble_brick_blast", genre: "3d", status: "live", as: AS("6759286539"), gp: GP("com.moowgames.marblebrickblast"),
     desc: "Marble Brick Blast combines aiming, brick-breaking, and puzzle-solving in one satisfying gameplay experience. Aim carefully, launch marbles, break bricks, and solve each level through smart shots and strategic thinking.",
     stats: [{ value: "50", label: "Levels" }, { value: "7", label: "Features" }, { value: "1", label: "Booster" }],
-    credit: "Developed by MooW Games Studio. Published with TapNation.",
+    credit: "Developed by MooW Games Studio. In partnership with TapNation.",
     specs: ["iOS", "Android"],
     shots: [
       { file: "marble_brick_blast_shot_1.webp", w: 540, h: 960, caption: "Aim the launcher and fire marbles", alt: "Marble Brick Blast gameplay: a dotted aiming line runs from the marble launcher up to a block of colored, numbered bricks" },
@@ -558,7 +558,6 @@ const GAMES = [
       { file: "sheep_n_knit_shot_3.webp", w: 540, h: 960, caption: "Level 39: sheep lanes below the pen", alt: "Sheep N Knit gameplay, level 39: a sheep pen with three queued lanes of sheep beneath it and three spools above" },
     ] },
   { name: "Link & Knit Puzzle", year: 2025, icon: "linknknit", genre: "yarn", status: "live", as: AS("6745343789") },
-  { name: "Hand Shake Puzzle", year: 2025, icon: "handshake_appicon_1", genre: "matching", status: "live", as: AS("6746050350") },
   { name: "Cubetris - 3D Puzzle", year: 2025, icon: "cubetris_3d_puzzle", genre: "3d", status: "live", as: AS("6743082555") },
   { name: "Color Hexa Puzzle", year: 2025, icon: "color_hexa_puzzle_1", genre: "matching", status: "live", as: AS("6740743141") },
   { name: "Bolt Mania!", year: 2025, icon: "bolt_mania", genre: "matching", status: "live", as: AS("6740585259") },
@@ -567,10 +566,10 @@ const GAMES = [
   { name: "Weapon Car Run", year: 2024, icon: "weapon_car_run_2", genre: "runner", status: "delisted" },
 ];
 
-// Shown only in "Our Latest Games" (not in the hero grid).
+// Not part of GAMES; shown in "Our Latest Games", and Sand Drop also leads the hero grid.
 const FEATURED_ONLY = [
-  { name: "Sand Drop: Sort Puzzle", icon: "sand_drop_icon",
-    credit: "Developed by MooW Games Studio. Published by iKame.",
+  { name: "Sand Drop: Sort Puzzle", icon: "sand_drop_icon", gp: GP("com.moowgames.sand.drop.sort.puzzle"),
+    credit: "Developed by MooW Games Studio. In partnership with iKame.",
     desc: "Sand Drop: Sort Puzzle is a sand-art puzzle game developed by MooW Games Studio and published by iKame. Players solve picture-based challenges by extracting and sorting colored sand across 50 levels.",
     stats: [{ value: "50", label: "Levels" }, { value: "4", label: "Features" }],
     specs: ["Sand Art gameplay"],
@@ -595,9 +594,13 @@ const CREDIT_PH = `<span class="ph">Add confirmed credit line describing each co
 document.querySelectorAll('[data-count="shipped"]').forEach(el => { el.textContent = GAMES.length; });
 document.querySelectorAll('[data-count="live"]').forEach(el => { el.textContent = live.length; });
 
-document.getElementById("tray").innerHTML = live.map(g =>
-  `<li><a href="${g.as || g.gp}" target="_blank" rel="noopener"><img src="${icon(g)}" alt="${esc(g.name)}" width="240" height="240"></a></li>`
-).join("");
+// Hero grid: Sand Drop first, then the live games. A game without a store link gets an unlinked tile.
+const TRAY = [FEATURED_ONLY.find(g => g.name === "Sand Drop: Sort Puzzle"), ...live];
+document.getElementById("tray").innerHTML = TRAY.map(g => {
+  const img = `<img src="${icon(g)}" alt="${esc(g.name)}" width="240" height="240">`;
+  const url = g.as || g.gp;
+  return `<li>${url ? `<a href="${url}" target="_blank" rel="noopener">${img}</a>` : img}</li>`;
+}).join("");
 
 const statBoxes = g => `<dl class="stats${g.stats.length === 3 ? "" : ` stats-${g.stats.length}`}">${g.stats.map(s =>
   `<div><dt>${esc(s.label)}</dt><dd>${esc(s.value)}</dd></div>`
